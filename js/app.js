@@ -11,6 +11,10 @@ const handleOne = document.querySelector('.handles');
 const alert = document.querySelector('.cashout_alert');
 const alertWithdraw = document.querySelector('.alert_withdraw');
 const alertOdds = document.querySelector('.alert_odds');
+const alertTwo = document.querySelector('.cashout_alert_two');
+const alertWithdrawTwo = document.querySelector('.alert_withdraw_two');
+const alertOddsTwo = document.querySelector('.alert_odds_two');
+const alertContainer = document.querySelector('.cashout_alert_container');
 // getting element for the first handle ends here
 
 // getting element for the second handle
@@ -24,12 +28,32 @@ const betValueTwo = document.querySelector('.btn_progress_two .btn_value_two');
 const stakeAmountTwo = document.querySelector('.stake_amount_two');
 const handleOneTwo = document.querySelector('.handles_two');
 // getting element for the first handle ends here
+// working with balnce change
+const balanceContainer = document.querySelector('.change_balance_container');
+const balanceInputField = document.querySelector('.change_balance_input_field');
+const balanceBtn = document.querySelector('.add_balance_btn');
+
+const amount = document.querySelector('.amount');
+
 
 const balance = document.querySelector('.balance');
 
-let mainBalance = 48102.79;
+balance.addEventListener("click", () => {
+  balanceContainer.style.display = "flex";
+})
+
+balanceBtn.addEventListener("click", () => {
+  const balanceValue = Number(balanceInputField.value);
+  mainBalance = balanceValue;
+  balance.textContent = mainBalance;
+  balanceInputField.value = "";
+  balanceContainer.style.display = "none";
+})
+
+let mainBalance = 72159.45;
 
 balance.textContent = mainBalance;
+
 
 // =======================================================================================
 // first handle code
@@ -62,7 +86,7 @@ btn.addEventListener('click', () => {
         displayAlert(cashout);
         // setBackToDefault();
       })
-    }, 2000)
+    }, 5500)
 
   }, 3000)
 })
@@ -95,12 +119,12 @@ btnTwo.addEventListener('click', () => {
         balance.textContent = newBalance;
         clearInterval(cashoutTime);
         handleOneTwo.classList.remove("handle_1_two");
-        displayAlert(cashout);
+        displayAlertTwo(cashout);
         // setBackToDefault();
       })
-    }, 2000)
+    }, 6000)
 
-  }, 2000)
+  }, 3000)
 })
 // first handle code ends here
 // =======================================================================================
@@ -143,6 +167,7 @@ successBtnAmountTwo.textContent = stakeAmountTwo.value;
 
 
 let counter = 1.00;
+let counterTwo = 1.00;
 // ====================================================================================================
 function countCashout() {
   
@@ -298,122 +323,122 @@ function setCashout(counter) {
 // ====================================================================================================
 function countCashoutTwo() {
   
-  counter += 0.01;
-  setCashoutTwo(counter);
+  counterTwo += 0.01;
+  setCashoutTwo(counterTwo);
   
-  if (counter > 1.5) {
-    counter += 0.005;
-    setCashoutTwo(counter);
+  if (counterTwo > 1.5) {
+    counterTwo += 0.005;
+    setCashoutTwo(counterTwo);
     console.log("hello");
   }
 
-  if (counter > 2) {
-    counter += 0.005;
-    setCashoutTwo(counter);
+  if (counterTwo > 2) {
+    counterTwo += 0.005;
+    setCashoutTwo(counterTwo);
     console.log("hello");
   }
 
-  if (counter > 2.5) {
-    counter += 0.003;
-    setCashoutTwo(counter);
+  if (counterTwo > 2.5) {
+    counterTwo += 0.003;
+    setCashoutTwo(counterTwo);
     console.log("hello");
   }
   
-  if (counter > 3) {
-    counter += 0.0045;
-    setCashoutTwo(counter);
+  if (counterTwo > 3) {
+    counterTwo += 0.0045;
+    setCashoutTwo(counterTwo);
     console.log("Tymer");
   }
 
-  if (counter > 4) {
-    counter += 0.0045;
-    setCashoutTwo(counter);
+  if (counterTwo > 4) {
+    counterTwo += 0.0045;
+    setCashoutTwo(counterTwo);
     console.log("Am");
   }
 
-  if (counter > 4.5) {
-    counter += 0.0075;
-    setCashoutTwo(counter);
+  if (counterTwo > 4.5) {
+    counterTwo += 0.0075;
+    setCashoutTwo(counterTwo);
     console.log("Am");
   }
   
-  if (counter > 5) {
-    counter += 0.01;
-    setCashoutTwo(counter);
+  if (counterTwo > 5) {
+    counterTwo += 0.01;
+    setCashoutTwo(counterTwo);
     console.log("Here");
   }
   
-  if (counter > 6) {
-    counter += 0.005;
-    setCashoutTwo(counter);
+  if (counterTwo > 6) {
+    counterTwo += 0.005;
+    setCashoutTwo(counterTwo);
     console.log("Tymer");
   }
-  if (counter > 7) {
-    counter += 0.015;
-    setCashoutTwo(counter);
+  if (counterTwo > 7) {
+    counterTwo += 0.015;
+    setCashoutTwo(counterTwo);
     console.log("Tymer");
   }
-  if (counter > 8) {
-    counter += 0.05;
-    setCashoutTwo(counter);
+  if (counterTwo > 8) {
+    counterTwo += 0.05;
+    setCashoutTwo(counterTwo);
     console.log("Tymer");
   }
-  if (counter > 9) {
-    counter += 0.5;
-    setCashoutTwo(counter);
+  if (counterTwo > 9) {
+    counterTwo += 0.5;
+    setCashoutTwo(counterTwo);
     console.log("Tymer");
   }
-  if (counter > 10) {
-    counter += 1;
-    setCashoutTwo(counter);
+  if (counterTwo > 10) {
+    counterTwo += 1;
+    setCashoutTwo(counterTwo);
     console.log("Tymer");
   }
-  if (counter > 11) {
-    counter += 1;
-    setCashoutTwo(counter);
+  if (counterTwo > 11) {
+    counterTwo += 1;
+    setCashoutTwo(counterTwo);
     console.log("Tymer");
   }
-  if (counter > 12) {
-    counter += 1;
-    setCashoutTwo(counter);
+  if (counterTwo > 12) {
+    counterTwo += 1;
+    setCashoutTwo(counterTwo);
     console.log("Tymer");
   }
-  if (counter > 13) {
-    counter += 1;
-    setCashoutTwo(counter);
+  if (counterTwo > 13) {
+    counterTwo += 1;
+    setCashoutTwo(counterTwo);
     console.log("Tymer");
   }
-  if (counter > 14) {
-    counter += 1;
-    setCashoutTwo(counter);
+  if (counterTwo > 14) {
+    counterTwo += 1;
+    setCashoutTwo(counterTwo);
     console.log("Tymer");
   }
-  if (counter > 15) {
-    counter += 1;
-    setCashoutTwo(counter);
+  if (counterTwo > 15) {
+    counterTwo += 1;
+    setCashoutTwo(counterTwo);
     console.log("Tymer");
   }
-  if (counter > 11) {
-    counter += 0.05;
-    setCashoutTwo(counter);
+  if (counterTwo > 11) {
+    counterTwo += 0.05;
+    setCashoutTwo(counterTwo);
     console.log("Tymer");
   }
-  if (counter > 11) {
-    counter += 0.05;
-    setCashoutTwo(counter);
+  if (counterTwo > 11) {
+    counterTwo += 0.05;
+    setCashoutTwo(counterTwo);
     console.log("Tymer");
   }
-  if (counter > 11) {
-    counter += 0.05;
-    setCashoutTwo(counter);
+  if (counterTwo > 11) {
+    counterTwo += 0.05;
+    setCashoutTwo(counterTwo);
     console.log("Tymer");
   }
 
 }
 
-function setCashoutTwo(counter) {
+function setCashoutTwo(counterTwo) {
   let value = Number(stakeAmountTwo.value);
-  let cashout = value * counter;
+  let cashout = value * counterTwo;
   btnAmountTwo.textContent = `${Math.floor(cashout.toFixed(2))}.00`;
 }
 // ====================================================================================================
@@ -423,8 +448,34 @@ function displayAlert(cashout) {
   alertOdds.textContent = (Number(cashout) / Number(stakeAmount.value)).toFixed(2);
   alertWithdraw.textContent = cashout;
   alert.classList.add("show_alert");
+  if (alertTwo.classList.contains('show_alert_two')) {
+    alert.style.display = "flex";
+  }
   setTimeout(() => {
     alert.classList.add("hide_alert");
+    setTimeout(() => {
+      alert.style.display = "none";
+    }, 400)
+  }, 2000)
+}
+
+function displayAlertTwo(cashout) {
+  if (alert.classList.contains('show_alert')) {
+    alertContainer.style.height = `${8}rem`;
+    alertTwo.style.transform = `translateY(${-35}px)`;
+    alertContainer.style.gap = `${1.5}rem`;
+    alert.classList.remove('hide_alert')
+  } else {
+    alert.style.display = "none";
+    alertTwo.style.transform = `translateY(${-20}px)`;
+    alertContainer.style.gap = 0;
+    alertContainer.style.height = `${6}rem`;
+  }
+  alertOddsTwo.textContent = (Number(cashout) / Number(stakeAmountTwo.value)).toFixed(2);
+  alertWithdrawTwo.textContent = cashout;
+  alertTwo.classList.add("show_alert_two");
+  setTimeout(() => {
+    alertTwo.classList.add("hide_alert_two");
   }, 2000)
 }
 

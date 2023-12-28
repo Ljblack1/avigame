@@ -225,7 +225,7 @@ p {
   background-size: auto;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 130px;
+  width: 125px;
   height: 25px;
   background-image: url(https://aviator-next.spribegaming.com/top-bar-snow.a903d1c7f8b6d0b8.png);
   background-position: left bottom;
@@ -255,6 +255,40 @@ p {
 
 .currency {
   font-size: .75rem;
+}
+
+.change_balance_container {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 50vh;
+  background-color: #fff;
+  z-index: 1000;
+  border-radius: 4rem;
+  box-shadow: inset 5px 5px 5px #c0c0c0;
+  flex-direction: column;
+  gap: 1rem;
+  display: none;
+}
+
+.change_balance_input_field {
+  width: 80%;
+  padding: .5rem;
+  font-size: 1rem;
+}
+
+.add_balance_btn {
+  padding: .5rem 2rem;
+  background-color: transparent;
+  font-size: 1rem;
+  color: #141516;
+  border: 1px solid #141516;
+  border-radius: 2rem;
 }
 
 .underline {
@@ -394,6 +428,7 @@ p {
   width: 100%;
   height: 100%;
   transform: scaleX(1.02);
+  padding: 0 .2rem;
 }
 
 .game_handles {
@@ -691,11 +726,15 @@ p {
   height: 6rem;
   background-color: transparent;
   z-index: 100;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
   overflow: hidden;
+  pointer-events: none;
 }
 
-.cashout_alert {
+.cashout_alert,
+.cashout_alert_two {
   width: 70%;
   height: 3.5rem;
   background-color: #1e3e0d;
@@ -720,6 +759,16 @@ p {
 }
 
 .hide_alert {
+  transform: translateY(-130%);
+  opacity: 0;
+}
+
+.show_alert_two {
+  transform: translateY(-30%);
+  opacity: 1;
+}
+
+.hide_alert_two {
   transform: translateY(-130%);
   opacity: 0;
 }
@@ -766,12 +815,14 @@ p {
   color: rgba(255, 255, 255, .5);
 }
 
-.alert_odds {
+.alert_odds,
+.alert_odds_two {
   font-size: 1.35rem;
   transform: translateY(-3px);
 }
 
-.alert_withdraw {
+.alert_withdraw,
+.alert_withdraw_two {
   font-size: 1.25rem;
   font-weight: 600;
   transform: translateY(-3px);
