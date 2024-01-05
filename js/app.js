@@ -38,6 +38,14 @@ const amount = document.querySelector('.amount');
 
 const balance = document.querySelector('.balance');
 
+// const video = document.querySelector('.play_ground_video');
+// console.log(video);
+
+// video.addEventListener("click", () => {
+//   video.removeAttribute("muted");
+//   console.log(attr);
+// })
+
 balance.addEventListener("click", () => {
   balanceContainer.style.display = "flex";
 })
@@ -50,7 +58,7 @@ balanceBtn.addEventListener("click", () => {
   balanceContainer.style.display = "none";
 })
 
-let mainBalance = 72159.45;
+let mainBalance = 97851.89;
 
 balance.textContent = mainBalance;
 
@@ -86,7 +94,7 @@ btn.addEventListener('click', () => {
         displayAlert(cashout);
         // setBackToDefault();
       })
-    }, 5500)
+    }, 4000)
 
   }, 3000)
 })

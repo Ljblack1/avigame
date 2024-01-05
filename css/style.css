@@ -216,7 +216,7 @@ p {
   background: url("https://aviator-next.spribegaming.com/aviator-logo.cafbd29233306bf7.svg") no-repeat center center/contain;
 }
 
-.logo::after {
+/* .logo::after {
   content: "";
   position: absolute;
   top: 15px;
@@ -229,7 +229,7 @@ p {
   height: 25px;
   background-image: url(https://aviator-next.spribegaming.com/top-bar-snow.a903d1c7f8b6d0b8.png);
   background-position: left bottom;
-}
+} */
 
 .header_two_right {
   display: flex;
@@ -471,7 +471,7 @@ p {
   z-index: 2;
 }
 
-.handles::before,
+/* .handles::before,
 .handles_two::before {
   content: "";
   position: absolute;
@@ -485,9 +485,9 @@ p {
   height: 20px;
   background-image: url(https://aviator-next.spribegaming.com/bet-control-snow-left.5a60ba1a481f48c2.png);
   background-position: left top;
-}
+} */
 
-.handles::after,
+/* .handles::after,
 .handles_two::after {
   content: "";
   position: absolute;
@@ -501,7 +501,7 @@ p {
   height: 30px;
   background-image: url(https://aviator-next.spribegaming.com/bet-control-snow-right.f5fade2b9e720254.png);
   background-position: right top;
-}
+} */
 
 .bet_type_btn,
 .bet_type_btn_two {
@@ -542,10 +542,10 @@ p {
   background-color: rgb(0, 255, 128);
   color: rgba(255, 255, 255, .7);
   background-color: rgba(158, 160, 163, .15);
-  background-image: url(https://aviator-next.spribegaming.com/bet-slider-btn-bg-left.b6afacf42d2ad1f8.svg), url(https://aviator-next.spribegaming.com/bet-slider-btn-bg-right.4d7f6567f3df0412.svg);
+  /* background-image: url(https://aviator-next.spribegaming.com/bet-slider-btn-bg-left.b6afacf42d2ad1f8.svg), url(https://aviator-next.spribegaming.com/bet-slider-btn-bg-right.4d7f6567f3df0412.svg);
   background-position: left bottom,right bottom;
   background-size: contain;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 .place_bet_handle,
@@ -585,10 +585,10 @@ p {
 .btn_success,
 .btn_success_two {
   background-color: #28a909;
-  background-image: url(https://aviator-next.spribegaming.com/snow-btn-bet.88a73d3533c84a88.svg), url(https://aviator-next.spribegaming.com/tree-left-btn-bet.87c54c1f4d86ca02.svg), url(https://aviator-next.spribegaming.com/tree-right-btn-bet.6116fecd1402931a.svg);
+  /* background-image: url(https://aviator-next.spribegaming.com/snow-btn-bet.88a73d3533c84a88.svg), url(https://aviator-next.spribegaming.com/tree-left-btn-bet.87c54c1f4d86ca02.svg), url(https://aviator-next.spribegaming.com/tree-right-btn-bet.6116fecd1402931a.svg);
   background-position: center top,left bottom,right bottom;
   background-size: contain,auto,auto;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 .cancel_btn_container,
@@ -616,10 +616,10 @@ p {
   text-align: center;
   text-shadow: 0 1px 2px rgba(0,0,0,.5);
   display: none;
-  background-image: url(https://aviator-next.spribegaming.com/snow-btn-cashout.85f10c61cdca9da7.svg), url(https://aviator-next.spribegaming.com/tree-left-btn-cashout.a3232c62e7ac8aec.svg), url(https://aviator-next.spribegaming.com/tree-right-btn-cashout.3ba8c0b6cd2211d5.svg);
+  /* background-image: url(https://aviator-next.spribegaming.com/snow-btn-cashout.85f10c61cdca9da7.svg), url(https://aviator-next.spribegaming.com/tree-left-btn-cashout.a3232c62e7ac8aec.svg), url(https://aviator-next.spribegaming.com/tree-right-btn-cashout.3ba8c0b6cd2211d5.svg);
   background-position: center top,left bottom,right bottom;
   background-size: contain,auto,auto;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 .place_bet_btn_currency,
@@ -637,10 +637,10 @@ p {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0,0,0,.5);
-  background-image: url(https://aviator-next.spribegaming.com/snow-btn-cancel.a2edb807a0fa65a2.svg), url(https://aviator-next.spribegaming.com/tree-left-btn-cancel.f91a0356b51cadea.svg), url(https://aviator-next.spribegaming.com/tree-right-btn-cancel.335b235db5760704.svg);
+  /* background-image: url(https://aviator-next.spribegaming.com/snow-btn-cancel.a2edb807a0fa65a2.svg), url(https://aviator-next.spribegaming.com/tree-left-btn-cancel.f91a0356b51cadea.svg), url(https://aviator-next.spribegaming.com/tree-right-btn-cancel.335b235db5760704.svg);
   background-position: center top,left bottom,right bottom;
   background-size: contain,auto,auto;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 .handle_1,
