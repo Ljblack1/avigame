@@ -784,6 +784,7 @@ p {
 }
 
 .alert_cashout_total {
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: #4eb919;
@@ -794,6 +795,39 @@ p {
   color: #fff;
   border-radius: 3rem;
 }
+
+.alert_star {
+  position: absolute;
+  color: rgba(99, 112, 174, .5);
+}
+
+.star_top_left,
+.star_top_right {
+  top: 2.5px;
+  font-size: 1.1rem;
+}
+
+.star_buttom_left,
+.star_buttom_right {
+  bottom: 2.5px;
+}
+
+.star_top_left {
+  left: 10px;
+}
+
+.star_top_right {
+  right: 10px;
+}
+
+.star_buttom_left {
+  left: 15px;
+}
+
+.star_buttom_right {
+  right: 15px;
+}
+
 
 .alert_right{
   display: flex;
