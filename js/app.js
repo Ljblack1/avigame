@@ -94,7 +94,7 @@ btn.addEventListener('click', () => {
         displayAlert(cashout);
         // setBackToDefault();
       })
-    }, 3000)
+    }, 0)
 
   }, 3000)
 })
@@ -130,9 +130,9 @@ btnTwo.addEventListener('click', () => {
         displayAlertTwo(cashout);
         // setBackToDefault();
       })
-    }, 3000)
+    }, 2000)
 
-  }, 2000)
+  }, 3000)
 })
 // first handle code ends here
 // =======================================================================================
